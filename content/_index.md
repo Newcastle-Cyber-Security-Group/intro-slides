@@ -51,7 +51,7 @@ If you're an entrepreneur or member of a startup, I2N is a valuable resource.
 
 Checkout I2N at the address below:
 
-![presentation EOI](images/i2n-qr.png)
+![I2N information page](images/i2n-qr.png)
 
 ---
 
