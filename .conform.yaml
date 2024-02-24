@@ -1,0 +1,28 @@
+policies:
+  - spec:
+      body:
+        required: false
+      conventional:
+        scopes:
+          - content
+          - tooling
+        types:
+          - build
+          - chore
+          - ci
+          - docs
+          - feat
+          - fix
+          - perf
+          - refactor
+          - release
+          - security
+          - style
+      gpg:
+        required: true
+      header:
+        case: lower
+        imperative: true
+        invalidLastCharacters: .
+        length: 80
+    type: commit
