@@ -49,7 +49,9 @@ Come to the /NEW Conference in 2024!
 
 If you're an entrepreneur or member of a startup, I2N is a valuable resource.
 
-You could work from this building!
+Checkout I2N at the address below:
+
+![presentation EOI](images/i2n-qr.png)
 
 ---
 
