@@ -1,4 +1,4 @@
-## [unreleased]
+## [0.0.2](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/compare/v0.0.1..v0.0.2) - 2024-02-24
 
 ### ⛰️  Features
 
@@ -16,6 +16,7 @@
 
 ### ⚙️ Miscellaneous Tasks
 
+- *(tooling)* Add changelog content - ([164c957](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/164c957168718cc6ffc3f65ac5bb6e9ea4f5e4db))
 - *(tooling)* Bump inputs for flake - ([86a9b3e](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/86a9b3e535642b179ea3f471be9d9f0693fbbf8e))
 
 ### Release
