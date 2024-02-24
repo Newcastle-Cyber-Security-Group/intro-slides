@@ -49,8 +49,6 @@ Come to the /NEW Conference in 2024!
 
 If you're an entrepreneur or member of a startup, I2N is a valuable resource.
 
-Checkout I2N at the address below:
-
 ![I2N information page](images/i2n-qr.png)
 
 ---

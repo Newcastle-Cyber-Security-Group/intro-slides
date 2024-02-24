@@ -88,7 +88,6 @@
               language = "system";
               pass_filenames = false;
             };
-
             statix-write = {
               enable = true;
               name = "Statix Write";
