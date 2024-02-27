@@ -5,6 +5,7 @@ policies:
       conventional:
         scopes:
           - content
+          - docs
           - tooling
         types:
           - build

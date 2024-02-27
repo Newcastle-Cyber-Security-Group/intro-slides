@@ -1,16 +1,24 @@
-## [unreleased]
+## [0.0.3](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/compare/v0.0.2..v0.0.3) - 2024-02-27
 
 ### ⛰️  Features
 
-- *(content)* Add more emojis! - ([5706a50](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/5706a500fe5e1911842c4dcf1a7ece8e1e8e3dc6))
-- *(tooling)* Add prettierignore definition - ([520f474](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/520f47435e2d8bb03bb9b9aaf2168ee260b899f1))
+- *(content)* Update changelog - ([35fa916](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/35fa916b3ddcc893d413ba910c71f2a6e55cbe96))
+- *(content)* Add more emojis! - ([23a7aa6](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/23a7aa601a84c1720749bd211a9662955173a6e2))
+- *(tooling)* Add prettierignore definition - ([0bdf619](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/0bdf6191e062689c46cb7e0752460b76fa309b40))
 
 ### 🐛 Bug Fixes
 
-- *(content)* Correct ntp contact image - ([1bff213](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/1bff213738ee7601004f347c1837e85183ae9a44))
-- *(tooling)* Disable git-cliff for the moment - ([520f474](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/520f47435e2d8bb03bb9b9aaf2168ee260b899f1))
-- *(tooling)* Remove typos check from git-cliff configuration - ([9bfddc6](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/9bfddc6ae74ead71a844c2fc7f7b95946299ba2f))
+- *(content)* Correct ntp contact image - ([6b72a04](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/6b72a049f07de914727fe665323f90fb3e93aea6))
+- *(tooling)* Test if v4 deploy-pages is required - ([48ce21f](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/48ce21fc271abd394b9ff73a6ca2bd052bc45ec5))
+- *(tooling)* Remove redundant CI step - ([d679619](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/d679619956be7d39871480de94706526b75d542d))
+- *(tooling)* Fix actionlint issues with hugo deployment - ([9f7351a](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/9f7351a939590dd37407614048cac24a21632bd2))
+- *(tooling)* Disable git-cliff for the moment - ([0bdf619](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/0bdf6191e062689c46cb7e0752460b76fa309b40))
+- *(tooling)* Remove typos check from git-cliff configuration - ([86321b2](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/86321b24ea457ff33227d426d68e68e300b773a9))
 - *(tooling)* More permissive tag match rule - ([fcdf9da](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/fcdf9dafffd0cb9080ae421c8362314e0cda6dc7))
+
+### Signed-off-by
+
+- Dependabot[bot] <support@github.com> - ([b15f2d5](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/b15f2d5ca311d54d970419f2053f490de11e604f))
 
 ## [0.0.2](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/compare/v0.0.1..v0.0.2) - 2024-02-24
 
