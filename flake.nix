@@ -8,7 +8,6 @@
       flake = false;
     };
 
-    gitignore.url = "github:hercules-ci/gitignore.nix";
     nixpkgs.url = "github:nixOS/nixpkgs/nixpkgs-unstable";
 
     pre-commit-hooks = {
@@ -17,16 +16,41 @@
         nixpkgs.follows = "nixpkgs";
         flake-utils.follows = "flake-utils";
         flake-compat.follows = "flake-compat";
-        gitignore.follows = "gitignore";
       };
     };
   };
 
-  outputs = { self, flake-utils, gitignore, nixpkgs, ... }:
+  outputs = { self, flake-utils, nixpkgs, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = import nixpkgs { inherit system; };
-        inherit (gitignore.lib) gitignoreSource;
+        overlays.git-cliff = _final: prev: {
+          git-cliff = prev.rustPlatform.buildRustPackage rec {
+            inherit (prev.git-cliff) doCheck meta pname;
+
+            version = "2.0.2";
+
+            buildInputs = prev.git-cliff.buildInputs
+              ++ (prev.lib.optionals prev.stdenv.isDarwin
+                (with prev.darwin.apple_sdk.frameworks; [
+                  CoreServices
+                  SystemConfiguration
+                ]));
+
+            src = prev.fetchFromGitHub {
+              owner = "orhun";
+              repo = "git-cliff";
+              rev = "v${version}";
+              hash = "sha256-m8xnsj6z/QBeya3CQBkQ+/eGSCZVKpTa8y1zt+3NeIo=";
+            };
+
+            cargoHash = "sha256-axh62ogKI2UnlI4aXLDB3fIg1CowQN8xRKWmZi5Kgig=";
+          };
+        };
+
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [ overlays.git-cliff ];
+        };
       in {
         apps = {
           build = {
@@ -45,16 +69,25 @@
         };
 
         checks.pre-commit = self.inputs.pre-commit-hooks.lib.${system}.run {
-          src = gitignoreSource self;
+          src = self;
           hooks = {
             # Builtin hooks
+            actionlint.enable = true;
+            conform.enable = true;
             deadnix.enable = true;
             nixfmt.enable = true;
             prettier.enable = true;
             statix.enable = true;
-            typos.enable = false;
+            typos.enable = true;
 
             # Custom hooks
+            git-cliff = {
+              enable = false;
+              name = "Git Cliff";
+              entry = "${pkgs.git-cliff}/bin/git-cliff --output CHANGELOG.md";
+              language = "system";
+              pass_filenames = false;
+            };
             statix-write = {
               enable = true;
               name = "Statix Write";
@@ -68,7 +101,11 @@
           settings = {
             deadnix.edit = true;
             nixfmt.width = 80;
-            prettier.write = true;
+            prettier = {
+              ignore-path = [ self.packages.${system}.prettierignore ];
+              write = true;
+            };
+            typos.locale = "en-au";
           };
         };
 
@@ -83,6 +120,25 @@
           "${name}" = pkgs.mkShell {
             inherit name packages;
             inherit (self.checks.${system}.pre-commit) shellHook;
+          };
+        };
+
+        packages = {
+          default = self.packages.${system}.prettierignore;
+
+          # Added as a simple convenience until https://github.com/NixOS/nixpkgs/pull/290950 is
+          # merged into the unstable branch
+          inherit (pkgs) git-cliff;
+
+          prettierignore = pkgs.writeTextFile {
+            name = ".prettierignore";
+            text = pkgs.lib.concatStringsSep "\n" [
+              ".pre-commit-config.yaml"
+              ".prettierignore"
+              "*.nix"
+              "CHANGELOG.md"
+              "result"
+            ];
           };
         };
       });

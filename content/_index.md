@@ -5,7 +5,7 @@ outputs = ["Reveal"]
 
 {{< slide background-image="images/bar-beach.png" >}}
 
-## Welcome to NCSG
+## Welcome to NCSG! 💻
 
 ---
 
@@ -35,27 +35,27 @@ Come to the /NEW Conference in 2024!
 
 ---
 
-### Interested in presenting?
+### Interested in presenting? 🎤
 
 ![presentation EOI](images/wanna-present-qr.png)
 
 ---
 
-### Thank you to our sponsors for this event
+### Thank you to our sponsors for this event 🙇
 
 ---
 
 ## I2N
 
-If you're an entrepreneur or member of a startup, I2N is a valuable resource.
+If you're an entrepreneur or member of a startup, I2N is a valuable resource
 
-You could work from this building!
+![I2N information page](images/i2n-qr.png)
 
 ---
 
-## NewyTechPeople
+## NewyTechPeople 🤩
 
-A specialist technical recruitment agency for the Hunter and beyond.
+A specialist technical recruitment agency for the Hunter and beyond
 
 ---
 
