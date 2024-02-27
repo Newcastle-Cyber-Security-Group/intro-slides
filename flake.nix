@@ -82,7 +82,7 @@
 
             # Custom hooks
             git-cliff = {
-              enable = true;
+              enable = false;
               name = "Git Cliff";
               entry = "${pkgs.git-cliff}/bin/git-cliff --output CHANGELOG.md";
               language = "system";
@@ -101,7 +101,10 @@
           settings = {
             deadnix.edit = true;
             nixfmt.width = 80;
-            prettier.write = true;
+            prettier = {
+              ignore-path = [ self.packages.${system}.prettierignore ];
+              write = true;
+            };
             typos.locale = "en-au";
           };
         };
@@ -117,6 +120,25 @@
           "${name}" = pkgs.mkShell {
             inherit name packages;
             inherit (self.checks.${system}.pre-commit) shellHook;
+          };
+        };
+
+        packages = {
+          default = self.packages.${system}.prettierignore;
+
+          # Added as a simple convenience until https://github.com/NixOS/nixpkgs/pull/290950 is
+          # merged into the unstable branch
+          inherit (pkgs) git-cliff;
+
+          prettierignore = pkgs.writeTextFile {
+            name = ".prettierignore";
+            text = pkgs.lib.concatStringsSep "\n" [
+              ".pre-commit-config.yaml"
+              ".prettierignore"
+              "*.nix"
+              "CHANGELOG.md"
+              "result"
+            ];
           };
         };
       });
