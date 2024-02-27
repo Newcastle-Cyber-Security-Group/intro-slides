@@ -1,3 +1,17 @@
+## [unreleased]
+
+### ⛰️  Features
+
+- *(content)* Add more emojis! - ([5706a50](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/5706a500fe5e1911842c4dcf1a7ece8e1e8e3dc6))
+- *(tooling)* Add prettierignore definition - ([520f474](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/520f47435e2d8bb03bb9b9aaf2168ee260b899f1))
+
+### 🐛 Bug Fixes
+
+- *(content)* Correct ntp contact image - ([1bff213](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/1bff213738ee7601004f347c1837e85183ae9a44))
+- *(tooling)* Disable git-cliff for the moment - ([520f474](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/520f47435e2d8bb03bb9b9aaf2168ee260b899f1))
+- *(tooling)* Remove typos check from git-cliff configuration - ([9bfddc6](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/9bfddc6ae74ead71a844c2fc7f7b95946299ba2f))
+- *(tooling)* More permissive tag match rule - ([fcdf9da](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/fcdf9dafffd0cb9080ae421c8362314e0cda6dc7))
+
 ## [0.0.2](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/compare/v0.0.1..v0.0.2) - 2024-02-24
 
 ### ⛰️  Features
