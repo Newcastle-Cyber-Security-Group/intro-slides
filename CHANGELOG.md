@@ -1,5 +1,9 @@
 ## [unreleased]
 
+### ⛰️  Features
+
+- *(content)* Add ntp and /new content - thanks Sarah! - ([267bae6](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/267bae60e1c9d3b86ad5512e5d9d8423b900d92d))
+
 ### ⚙️ Miscellaneous Tasks
 
 - *(docs)* Update changelog - ([0c70aa5](https://github.com/Newcastle-Cyber-Security-Group/intro-slides/commit/0c70aa5c92a5eb9a3c09c8800d777cb3b72b8ad8))
