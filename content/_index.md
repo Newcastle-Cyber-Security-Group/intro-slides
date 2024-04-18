@@ -23,7 +23,9 @@ Join other local tech meetups via the below:
 
 ![community list QR link](images/community-qr.png)
 
-Come to the /NEW Conference in 2024!
+---
+
+![NEW conference promotional slide](images/new-2024.png)
 
 ---
 
@@ -60,5 +62,7 @@ A specialist technical recruitment agency for the Hunter and beyond
 ---
 
 ### Hiring @ NewyTechPeople
+
+[linda@newytechpeople.com.au](mailto:linda@newytechpeople.com.au)
 
 ![NTP Hiring](images/ntp-hiring.png)
