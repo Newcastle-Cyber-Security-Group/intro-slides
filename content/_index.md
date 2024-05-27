@@ -25,10 +25,6 @@ Join other local tech meetups via the below:
 
 ---
 
-![NEW conference promotional slide](images/new-2024.png)
-
----
-
 ### Housekeeping
 
 1.  Please help clean up 🗑️
