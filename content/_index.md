@@ -35,7 +35,7 @@ Join other local tech meetups via the below:
 
 ### Interested in presenting? 🎤
 
-![presentation EOI](images/wanna-present-qr.png)
+Talk to us anytime in person or on Newwwie Slack!
 
 ---
 
