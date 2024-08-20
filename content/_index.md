@@ -62,3 +62,7 @@ A specialist technical recruitment agency for the Hunter and beyond
 [linda@newytechpeople.com.au](mailto:linda@newytechpeople.com.au)
 
 ![NTP Hiring](images/ntp-hiring.png)
+
+---
+
+## Meetup Time!
