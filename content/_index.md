@@ -35,7 +35,7 @@ Join other local tech meetups via the below:
 
 ### Interested in presenting? 🎤
 
-![presentation EOI](images/wanna-present-qr.png)
+Talk to us anytime in person or on Newwwie Slack!
 
 ---
 
@@ -62,3 +62,7 @@ A specialist technical recruitment agency for the Hunter and beyond
 [linda@newytechpeople.com.au](mailto:linda@newytechpeople.com.au)
 
 ![NTP Hiring](images/ntp-hiring.png)
+
+---
+
+## Meetup Time!
