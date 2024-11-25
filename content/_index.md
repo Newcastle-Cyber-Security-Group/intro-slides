@@ -25,6 +25,14 @@ Join other local tech meetups via the below:
 
 ---
 
+### Newwwie Tech Trivia
+
+Come join the wider community on the 11th of December for tech trivia! 🤓
+
+![community list QR link](images/tech-trivia.png)
+
+---
+
 ### Housekeeping
 
 1.  Please help clean up 🗑️

@@ -83,7 +83,13 @@
 
             typos = {
               enable = true;
-              settings.locale = "en-au";
+              settings = {
+                exclude = "LICENSE";
+                ignored-words = [
+                  "organized"
+                ];
+                locale = "en-au";
+              };
             };
 
             # Custom hooks
