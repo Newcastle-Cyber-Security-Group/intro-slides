@@ -51,14 +51,6 @@ Talk to us anytime in person or on Newwwie Slack!
 
 ---
 
-## I2N
-
-If you're an entrepreneur or member of a startup, I2N is a valuable resource
-
-![I2N information page](images/i2n-qr.png)
-
----
-
 ## NewyTechPeople 🤩
 
 A specialist technical recruitment agency for the Hunter and beyond
