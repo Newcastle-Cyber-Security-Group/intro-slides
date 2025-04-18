@@ -65,10 +65,9 @@
               settings.edit = true;
             };
 
-            nixfmt = {
+            nixfmt-rfc-style = {
               enable = true;
-              package = pkgs.nixfmt-rfc-style;
-              settings.width = 80;
+              settings.width = 120;
             };
 
             prettier = {
