@@ -13,7 +13,7 @@
 
     git-hooks = {
       inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:cachix/pre-commit-hooks.nix";
+      url = "github:cachix/git-hooks.nix";
     };
   };
 
