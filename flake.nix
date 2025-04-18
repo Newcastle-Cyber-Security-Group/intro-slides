@@ -91,15 +91,6 @@
               };
             };
 
-            # Custom hooks
-            git-cliff = {
-              enable = false;
-              name = "Git Cliff";
-              entry = "${pkgs.git-cliff}/bin/git-cliff --output CHANGELOG.md";
-              language = "system";
-              pass_filenames = false;
-            };
-
             statix-write = {
               enable = true;
               name = "Statix Write";
