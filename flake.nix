@@ -13,7 +13,7 @@
 
     git-hooks = {
       inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:cachix/pre-commit-hooks.nix";
+      url = "github:cachix/git-hooks.nix";
     };
   };
 
@@ -65,10 +65,9 @@
               settings.edit = true;
             };
 
-            nixfmt = {
+            nixfmt-rfc-style = {
               enable = true;
-              package = pkgs.nixfmt-rfc-style;
-              settings.width = 80;
+              settings.width = 120;
             };
 
             prettier = {
@@ -90,15 +89,6 @@
                 ];
                 locale = "en-au";
               };
-            };
-
-            # Custom hooks
-            git-cliff = {
-              enable = false;
-              name = "Git Cliff";
-              entry = "${pkgs.git-cliff}/bin/git-cliff --output CHANGELOG.md";
-              language = "system";
-              pass_filenames = false;
             };
 
             statix-write = {
